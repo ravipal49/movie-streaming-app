@@ -17,7 +17,7 @@ const server = express();
 const PORT = 1337;
 
 // server.use(bodyParser())
-server.use(cors())
+server.use(cors());
 server.use(express.json());
 server.use(fileUploadMiddleWare());
 
