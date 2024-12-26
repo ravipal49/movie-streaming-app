@@ -19,6 +19,11 @@ const movieSchema= new mongoose.Schema({
     movieimage:{
         type:String,
     },
+    isPaid: {
+        type: Boolean,
+        default: false
+    }
+    
 })
 
 const movie=mongoose.model('movie',movieSchema);
